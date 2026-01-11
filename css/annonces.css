@@ -1,0 +1,99 @@
+/* ===== HERO ===== */
+.annonces-hero {
+  background: linear-gradient(
+    rgba(30,143,79,0.85),
+    rgba(30,143,79,0.85)
+  ),
+  url("https://images.unsplash.com/photo-1592496001020-d31bd8306513");
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  color: white;
+  padding: 80px 20px;
+}
+
+.annonces-hero h1 {
+  font-size: 42px;
+}
+
+.annonces-hero p {
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+/* ===== FILTRES ===== */
+.filters {
+  display: flex;
+  gap: 20px;
+  padding: 30px;
+  justify-content: center;
+  background: #f4f7f6;
+}
+
+.filters input,
+.filters select {
+  padding: 12px 15px;
+  width: 250px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 15px;
+}
+
+/* ===== GRID ===== */
+.annonces-grid {
+  padding: 50px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+/* ===== CARD ===== */
+.annonce {
+  background: white;
+  border-radius: 18px;
+  padding: 25px;
+  box-shadow: 0 15px 30px rgba(0,0,0,0.12);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.annonce h3 {
+  color: #1e8f4f;
+  margin-bottom: 10px;
+}
+
+.annonce .categorie {
+  font-size: 14px;
+  color: #777;
+  margin-bottom: 15px;
+}
+
+.annonce p {
+  flex: 1;
+  color: #555;
+}
+
+.annonce button {
+  margin-top: 20px;
+  padding: 12px;
+  border-radius: 30px;
+  border: none;
+  background: #1e8f4f;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.annonce button:hover {
+  background: #15723e;
+}
+
+footer {
+  background: #1e8f4f;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 50px;
+}
