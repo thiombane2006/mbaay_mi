@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Annonces agricoles – Mbaay Mi</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/annonces.css">
+</head>
+<body>
+
+<header class="header">
+  <div class="logo">🌱 Mbaay Mi</div>
+  <nav>
+    <a href="index.html">Accueil</a>
+    <a href="annonces.html" class="active">Annonces</a>
+    <a href="contact.html">Contact</a>
+    <a href="dashboard.html">Dashboard</a>
+  </nav>
+</header>
+
+<!-- HERO -->
+<section class="annonces-hero">
+  <h1>Annonces agricoles</h1>
+  <p>Découvrez les meilleures opportunités du secteur agricole</p>
+</section>
+
+<!-- FILTRES -->
+<section class="filters">
+  <input type="text" id="search" placeholder="Rechercher une annonce...">
+  <select id="categorie">
+    <option value="all">Toutes les catégories</option>
+    <option value="semences">Semences</option>
+    <option value="engrais">Engrais</option>
+    <option value="achat">Achat</option>
+  </select>
+</section>
+
+<!-- LISTE -->
+<section class="annonces-grid" id="annoncesContainer">
+</section>
+
+<footer>
+  <p>© 2025 Mbaay Mi – Plateforme agricole</p>
+</footer>
+
+<script src="js/common.js"></script>
+<script src="js/annonces.js"></script>
+</body>
+</html>
