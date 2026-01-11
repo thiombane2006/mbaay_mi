@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact – Mbaay Mi</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/contact.css">
+</head>
+<body>
+
+<header class="header">
+  <div class="logo">🌱 Mbaay Mi</div>
+  <nav>
+    <a href="index.html">Accueil</a>
+    <a href="annonces.html">Annonces</a>
+    <a href="contact.html" class="active">Contact</a>
+    <a href="dashboard.html">Dashboard</a>
+  </nav>
+</header>
+
+<!-- HERO -->
+<section class="contact-hero">
+  <h1>Contactez-nous</h1>
+  <p>Une question ? Un partenariat ? Écrivez-nous.</p>
+</section>
+
+<!-- CONTACT -->
+<section class="contact-container">
+  <div class="contact-info">
+    <h2>Pourquoi nous contacter ?</h2>
+    <p>
+      Mbaay Mi accompagne les acteurs agricoles du Sénégal.
+      Nous sommes à votre écoute pour toute information ou collaboration.
+    </p>
+
+    <ul>
+      <li>📍 Sénégal</li>
+      <li>📧 contact@mbaaymi.sn</li>
+      <li>📞 +221 77 114 39 07</li>
+    </ul>
+  </div>
+
+  <form id="contactForm" class="contact-form">
+    <h2>Envoyer un message</h2>
+
+    <div class="form-group">
+      <input type="text" id="prenom" placeholder="Prénom">
+      <small></small>
+    </div>
+
+    <div class="form-group">
+      <input type="text" id="nom" placeholder="Nom">
+      <small></small>
+    </div>
+
+    <div class="form-group">
+      <input type="email" id="email" placeholder="Email">
+      <small></small>
+    </div>
+
+    <div class="form-group">
+      <textarea id="message" placeholder="Votre message"></textarea>
+      <small></small>
+    </div>
+
+    <button type="submit">Envoyer le message</button>
+
+    <p id="successMessage"></p>
+  </form>
+</section>
+
+<footer>
+  <p>© 2025 Mbaay Mi – Plateforme agricole</p>
+</footer>
+
+<script src="js/contact.js"></script>
+</body>
+</html>
