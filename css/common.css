@@ -1,0 +1,179 @@
+/* ================= RESET ================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Segoe UI", Roboto, Arial, sans-serif;
+  background: #f4f7f6;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* ================= HEADER ================= */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 50px;
+  background: #1e8f4f;
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.header nav a {
+  margin-left: 22px;
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  position: relative;
+  transition: 0.3s;
+}
+
+.header nav a::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  left: 0;
+  bottom: -6px;
+  background: white;
+  transition: 0.3s;
+}
+
+.header nav a:hover::after,
+.header nav a.active::after {
+  width: 100%;
+}
+
+/* ================= BUTTONS ================= */
+.btn {
+  padding: 14px 30px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  display: inline-block;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.btn.primary {
+  background: #1e8f4f;
+  color: white;
+}
+
+.btn.primary:hover {
+  background: #15723e;
+}
+
+.btn.secondary {
+  background: white;
+  color: #1e8f4f;
+  border: 2px solid #1e8f4f;
+}
+
+.btn.secondary:hover {
+  background: #1e8f4f;
+  color: white;
+}
+
+/* ================= SECTIONS ================= */
+section {
+  width: 100%;
+}
+
+h1, h2, h3 {
+  font-weight: 700;
+}
+
+/* ================= CARDS ================= */
+.card {
+  background: white;
+  border-radius: 18px;
+  padding: 30px;
+  box-shadow: 0 15px 30px rgba(0,0,0,0.12);
+}
+
+/* ================= FOOTER ================= */
+footer {
+  background: #0f5d32;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 60px;
+}
+
+footer p {
+  font-size: 14px;
+  opacity: 0.9;
+}
+
+/* ================= FORMS ================= */
+input,
+select,
+textarea,
+button {
+  font-family: inherit;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+  border-color: #1e8f4f;
+}
+
+/* ================= ANIMATIONS ================= */
+.fade-in {
+  animation: fade 0.8s ease-in-out forwards;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 900px) {
+  .header {
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+  }
+
+  .header nav a {
+    margin-left: 15px;
+  }
+}
+
+@media (max-width: 600px) {
+  .header nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .header nav a {
+    margin: 8px;
+  }
+}
