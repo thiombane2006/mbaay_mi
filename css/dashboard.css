@@ -1,0 +1,98 @@
+/* ===== HERO ===== */
+.dashboard-hero {
+  background: linear-gradient(
+    rgba(30,143,79,0.9),
+    rgba(30,143,79,0.9)
+  ),
+  url("https://images.unsplash.com/photo-1500530855697-b586d89ba3ee");
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  color: white;
+  padding: 70px 20px;
+}
+
+.dashboard-hero h1 {
+  font-size: 42px;
+}
+
+.dashboard-hero p {
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+/* ===== STATS ===== */
+.stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 30px;
+  padding: 60px 40px;
+}
+
+.stat-card {
+  background: white;
+  padding: 30px;
+  border-radius: 18px;
+  box-shadow: 0 15px 30px rgba(0,0,0,0.12);
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.stat-card:hover {
+  transform: translateY(-8px);
+}
+
+.stat-card h3 {
+  color: #1e8f4f;
+  margin-bottom: 15px;
+}
+
+.stat-card p {
+  font-size: 36px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.stat-card span {
+  font-size: 14px;
+  color: #777;
+}
+
+/* ===== ACTIVITY ===== */
+.activity {
+  padding: 50px 40px;
+  background: #f4f7f6;
+}
+
+.activity h2 {
+  margin-bottom: 25px;
+  color: #1e8f4f;
+}
+
+.activity ul {
+  list-style: none;
+  padding: 0;
+}
+
+.activity li {
+  background: white;
+  margin-bottom: 15px;
+  padding: 15px 20px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .stats {
+    padding: 40px 20px;
+  }
+}
+
+footer {
+  background: #1e8f4f;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 50px;
+}

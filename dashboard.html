@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Dashboard – Mbaay Mi</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/dashboard.css">
+</head>
+<body>
+
+<header class="header">
+  <div class="logo">🌱 Mbaay Mi</div>
+  <nav>
+    <a href="index.html">Accueil</a>
+    <a href="annonces.html">Annonces</a>
+    <a href="contact.html">Contact</a>
+    <a href="dashboard.html" class="active">Dashboard</a>
+  </nav>
+</header>
+
+<!-- HERO -->
+<section class="dashboard-hero">
+  <h1>Tableau de bord</h1>
+  <p>Suivi des abonnements et activité récente</p>
+</section>
+
+<!-- STATS -->
+<section class="stats">
+  <div class="stat-card">
+    <h3>Abonnements</h3>
+    <p id="abonnes">0</p>
+    <span>Utilisateurs abonnés</span>
+  </div>
+
+  <div class="stat-card">
+    <h3>Annonces actives</h3>
+    <p id="annonces">0</p>
+    <span>Opportunités disponibles</span>
+  </div>
+
+  <div class="stat-card">
+    <h3>Messages</h3>
+    <p id="messages">0</p>
+    <span>Reçus via le contact</span>
+  </div>
+</section>
+
+<!-- ACTIVITÉ -->
+<section class="activity">
+  <h2>Activité récente</h2>
+  <ul id="activityList">
+    <!-- JS -->
+  </ul>
+</section>
+
+<footer>
+  <p>© 2025 Mbaay Mi – Dashboard</p>
+</footer>
+
+<script src="js/dashboard.js"></script>
+</body>
+</html>
